@@ -1,4 +1,4 @@
-package com.dmarc.cordovacall;
+package org.apache.cordova.com.dmarc.cordovacall;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -270,7 +270,7 @@ public class CordovaCall extends CordovaPlugin {
         callInfo.putBoolean(TelecomManager.EXTRA_START_CALL_WITH_VIDEO_STATE, true);
         tm.placeCall(uri, callInfo);
         permissionCounter = 0;
-        this.callbackContext.success("Outgoing call successful");
+        this.callbackContext.success("Outgoing call so successful");
     }
 
     private void mute() {
