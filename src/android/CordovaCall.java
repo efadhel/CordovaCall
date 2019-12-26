@@ -268,6 +268,7 @@ public class CordovaCall extends CordovaPlugin {
         callInfo.putParcelable(TelecomManager.EXTRA_OUTGOING_CALL_EXTRAS,callInfoBundle);
         callInfo.putParcelable(TelecomManager.EXTRA_PHONE_ACCOUNT_HANDLE, handle);
         callInfo.putBoolean(TelecomManager.EXTRA_START_CALL_WITH_VIDEO_STATE, true);
+        callInfo.putString("to",to);
         tm.placeCall(uri, callInfo);
         permissionCounter = 0;
         this.callbackContext.success("Outgoing call so successful " + uri + " " + to + " " + callInfo);
