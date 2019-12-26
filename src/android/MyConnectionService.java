@@ -1,4 +1,4 @@
-package com.dmarc.cordovacall;
+package org.apache.cordova.com.dmarc.cordovacall;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.PluginResult;
