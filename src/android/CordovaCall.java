@@ -270,7 +270,7 @@ public class CordovaCall extends CordovaPlugin {
         callInfo.putBoolean(TelecomManager.EXTRA_START_CALL_WITH_VIDEO_STATE, true);
         tm.placeCall(uri, callInfo);
         permissionCounter = 0;
-        this.callbackContext.success("Outgoing call so successful");
+        this.callbackContext.success("Outgoing call so successful " + uri + " " + to + " " + callInfo);
     }
 
     private void mute() {
