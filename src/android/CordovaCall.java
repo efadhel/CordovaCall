@@ -257,7 +257,7 @@ public class CordovaCall extends CordovaPlugin {
         callInfo.putString("from",from);
         tm.addNewIncomingCall(handle, callInfo);
         permissionCounter = 0;
-        this.callbackContext.success("Incoming call successful");
+        this.callbackContext.success("Incoming call successful " + callInfo);
     }
 
     private void sendCall() {
